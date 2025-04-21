@@ -1,11 +1,109 @@
-/* 
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
 
-*/
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+  padding: 1rem 2rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  background-color: #e9ecef;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #084298;
+}
+
+/* Cards section */
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
