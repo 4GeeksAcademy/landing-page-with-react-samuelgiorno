@@ -3,7 +3,9 @@ import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
 import Card from "./card.jsx";
 import Footer from "./footer.jsx";
+import "../../styles/index.css";
 
+// Tarjetas de ejemplo
 const cards = [
   {
     image: "https://picsum.photos/id/10/200/300",
@@ -32,7 +34,7 @@ const Home = () => {
     <div className="text-center">
       <Navbar />
       <Jumbotron />
-      <div className="container">
+      <div className="container mt-4">
         <div className="row">
           {cards.map((item, index) => (
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={index}>
